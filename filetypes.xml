@@ -4,6 +4,7 @@
     <extensionMap>
       <mapping pattern="Task39" type="Python" />
       <mapping pattern="Task" type="Python" />
+      <mapping pattern="Task46" type="Python" />
     </extensionMap>
   </component>
 </application>
