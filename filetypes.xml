@@ -6,6 +6,7 @@
       <mapping pattern="Task" type="Python" />
       <mapping pattern="Task35" type="Python" />
       <mapping pattern="Task46" type="Python" />
+      <mapping pattern="Task10" type="Python" />
     </extensionMap>
   </component>
 </application>
