@@ -1,8 +1,10 @@
-def IsSimple(x):
-    if(x==1): return True
-    if(x%2==0): return False
-    for n in range(3,x,2):
-        if(x % n == 0 and x!=n): return False;
+def IsPrime(x):
+    if(x<=3): return x>1;
+    if(x%2==0 or x%3==0): return False;
+    i=5;
+    while(i*i<=x):
+        if(x % i==0 or x % (i+2)==0): return False;
+        i+=6;
     return True;
 
 def ShuffleForward(x):
@@ -14,7 +16,7 @@ def ShuffleForward(x):
 def IsRoundSimple(x):
     stringRepresentation=str(x)
     for i in range(0, len(stringRepresentation)):
-        if(not IsSimple(int(stringRepresentation))): return False;
+        if(not IsPrime(int(stringRepresentation))): return False;
         stringRepresentation=ShuffleForward(stringRepresentation)
     return True
 
