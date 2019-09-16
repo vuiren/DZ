@@ -11,9 +11,4 @@ def FindLargestPalindrom():
                 res=n1*n2;
     return res;
 
-def main():
-    print(FindLargestPalindrom())
-
-if __name__ == '__main__':
-    main()
-
+print(FindLargestPalindrom())
